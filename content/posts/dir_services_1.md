@@ -1,9 +1,10 @@
 ---
 title: "Domain Services Part 1"
+author: "Brian"
 date: 2021-04-02T12:08:45-07:00
 draft: false
 image: "/imgs/2021.03_dirsrv1_getforest.png"
-categories: ['homelab']
+categories: ['home lab']
 tags: ['homelab', 'Windows Server', 'Active Directory']
 ---
 

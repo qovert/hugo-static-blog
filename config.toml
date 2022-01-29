@@ -48,6 +48,11 @@ defaultTheme = "dark"
     title = ""
     weight = 3
 
+[author]
+  name = "Brian"
+  email = ""
+  link = ""
+
 # Markup related configuration in Hugo
 [markup]
   # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
