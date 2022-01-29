@@ -1,80 +1,56 @@
-baseURL = '/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-# theme = "solar-theme-hugo"
+title = "harkreader.me"
+baseurl = "/"
+defaultContentLanguage = "en"
+languageCode = "en"
 
-theme = "terminal"
-paginate = 5
+# Change the default theme to be use when building the site with Hugo
+theme = "LoveIt"
+defaultTheme = "dark"
 
 [params]
-  # dir name of your main content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+  # LoveIt theme version
+  version = "0.2.X"
+  description = "sporadically updated tech gibberish"
 
-  # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "green"
+[params.home]
+  [params.home.profile]
+    enable = true
+    avatarURL = "/imgs/profile.png"
+    subtitle = "sporadically updated tech gibberish"
+		
 
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 3
 
-  # show selector to switch language
-  showLanguageSelector = false
-
-  # set theme to full screen width
-  fullWidthTheme = false
-
-  # center theme with default width
-  centerTheme = true
-
-  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
-  # then the file will be used as a cover automatically.
-  # With this option you don't have to put the `cover` param in a front-matter.
-  autoCover = true
-
-  # set post to show the last updated
-  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = false
-
-  # set a custom favicon (default is a `themeColor` square)
-  # favicon = "favicon.ico"
-
-  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
-  # updatedDatePrefix = "Updated"
-
-  # set all headings to their default size (depending on browser settings)
-  # it's set to `true` by default
-  # oneHeadingSize = false
-
-
-[params.twitter]
-  # set Twitter handles for Twitter cards
-  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
-  # do not include @
-  creator = ""
-  site = ""
-
-[languages]
-  [languages.en]
-    languageName = "English"
-    title = "harkreader.me"
-    subtitle = "Sporadically updated tech gibberish"
-    owner = "Brian Harkreader"
-    keywords = ""
-    copyright = ""
-    menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    missingContentMessage = "Page not found..."
-    missingBackButtonLabel = "Back to home page"
-
-    [languages.en.params.logo]
-      logoText = "harkreader.me"
-      logoHomeLink = "/"
-
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
