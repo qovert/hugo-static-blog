@@ -5,7 +5,7 @@ date: 2021-04-02T12:08:45-07:00
 draft: false
 image: "/imgs/2021.03_dirsrv1_getforest.png"
 categories: ['home lab']
-tags: ['homelab', 'Windows Server', 'Active Directory']
+tags: ['windows server', 'active directory']
 ---
 
 By request, here's the first part in the series of how to set up a home computer lab for testing and learning.   

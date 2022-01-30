@@ -3,8 +3,8 @@ title: "Domain Services Part 2"
 date: 2021-04-02T13:58:50-07:00
 draft: false
 image: "/imgs/2021.03_random_user_script.png"
-categories: ["blog post"]
-tags: ["homelab", "Windows Server", "Active Directory"]
+categories: ['home lab']
+tags: ["windows server", "active directory"]
 ---
 
 Ok, now we've got a big empty domain. What to do next?   

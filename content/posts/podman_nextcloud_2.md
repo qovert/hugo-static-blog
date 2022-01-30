@@ -2,9 +2,8 @@
 title: "Deploying Nextcloud Part 2"
 date: 2021-04-12T02:08:45-07:00
 draft: false
-taxonomies:
-  categories: ["blog post"]
-  tag: ['systemd','home network', 'containers', 'podman']
+categories: ['home lab']
+tags: ['linux', 'containers', 'podman']
 ---
 
 If you followed along with the previous post, you should have a fully working Nextcloud setup, all running in a pod called 'nextcloud'. In this article, we're going to use podman to generate systemd service units and set them to run at boot **in a user's context**. 

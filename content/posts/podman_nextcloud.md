@@ -2,8 +2,8 @@
 title: "Deploying Nextcloud Part 1"
 date: 2021-04-12T12:08:45-07:00
 draft: false
-categories: ["blog post"]
-tags: ['home network', 'containers', 'podman']
+categories: ["home lab"]
+tags: ['linux', 'containers', 'podman']
 ---
 
 This post will focus on a recent project of mine to containerize my personal Nextcloud instance. I've been running Nextcloud for years as my personal cloud file storage. I find the ability to automatically sync my phone's pictures and videos back home particularly handy! My previous Nextcloud instance was running on a FreeBSD VM for quite some time, so why the change? 
